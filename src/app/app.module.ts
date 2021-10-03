@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-// import { FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 // typescript feature that allows typescript to know where to find this
@@ -18,8 +18,8 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
     SuccessAlertComponent,
   ],
   imports: [
-    BrowserModule
-    // FormsModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
