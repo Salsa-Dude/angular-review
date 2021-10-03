@@ -19,6 +19,12 @@
  [(ngModel)]="serverName"
 >
 
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="userName"
+>
+
 <!-- <p>{{ serverName }}</p> -->
 
 <button 
@@ -28,7 +34,14 @@
   >Add Server
 </button>
 
-<p>{{ serverCreationStatus }}</p>
+<button
+  class="btn btn-primary"
+  [disabled]="userName === ''"
+>Reset User
+</button>
+
+<!-- structural directive -->
+<p *ngIf="serverCreated">Server was created, server name is {{ serverName }}</p>
 
 <app-server></app-server>
 <app-server></app-server>
