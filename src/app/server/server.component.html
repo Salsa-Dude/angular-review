@@ -1,3 +1,6 @@
 
-<!-- string interploation syntax -->
-<p>Server with ID {{ serverID }} is {{ getServerStatus() }}</p>
+<!-- string interploation syntax 
+  - added a attribute directive [ngStyle]
+-->
+
+<p [ngStyle]="{backgroundColor: getColor()}">Server with ID {{ serverID }} is {{ getServerStatus() }}</p>
