@@ -1,6 +1,10 @@
 
 <!-- string interploation syntax 
   - added a attribute directive [ngStyle]
+  - added another attribute directive [ngClass]
 -->
 
-<p [ngStyle]="{backgroundColor: getColor()}">Server with ID {{ serverID }} is {{ getServerStatus() }}</p>
+<p 
+  [ngStyle]="{backgroundColor: getColor()}"
+  [ngClass]="{online: serverStatus === 'online'}">Server with ID {{ serverID }} is {{ getServerStatus() }}
+</p>
